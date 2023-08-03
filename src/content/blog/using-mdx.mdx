@@ -1,0 +1,79 @@
+---
+title: 'Programming languages'
+description: ''
+pubDate: 'may 12 2023'
+# heroImage: '/placeholder-hero.jpg'
+---
+
+Here are the core concepts of any modern-day programming language.	
+#### ""`You can never understand everything. But, you should push yourself to understand the system -Ryan Dahl(developer of Node.js)`
+
+
+# (1)  Syntax & Semantic 
+### Syntax: `the grammar of the language.`
+### Semantics: `the meaning of the syntax (grammar).`
+A programmer must ensure program is syntactically and semantically correct before compiling 
+his code.
+#### `javaScript example: program both syntactically and semantically correct.`
+```js
+> function square(i,j) {
+	return i*j;
+}
+> square(2,5) // 10
+```
+
+# (2) Programming Paradigm
+Each paradigm consist a way to organize program. For example, C programming language is imperative paradigm.
+The programs are sequence of steps defined into small blocks that are both syntactically and semantically correct.
+These code blocks are organized function definitions and struct definitions. 
+A function definition is a block of code that performs a specific task and struct definition is collection 
+of primitive data types under a single structure. 
+### C 
+```c
+#include <stddef.h>
+#include <stdio.h>
+
+// function definitions
+int square(int n) {
+	int result = n * n;
+	return result;
+}
+
+int main() {
+	// struct definitions
+	struct lang { char *name; char *paradigm; int year; };
+	struct lang l = {.name="javaScript", .paradigm="multi-paradigm", .year=1995};
+	printf("language: %s %s %d\n", l.name, l.paradigm, l.year);
+	return 0;
+}
+```
+
+
+# (3) Source code 
+All programs are combinition of assignment statement, selection statement and loops.
+Here's a example that showcase all statements. We're going to implement binary search algorithm
+using javaScript.
+```js
+> function binarySearch(array, target) {
+	let left = array[0];
+	let right = array.length-1;
+
+	while(left <= right) {
+		let mid = Math.floor((left+right)/2);
+
+		if (array[mid] === target) {
+			return mid;
+		}
+		if (array[mid] < target) {
+			left = mid-1;
+		}
+		if (array[mid] > target) {
+			right = mid+1;
+		}
+	}
+	console.log('Target not found!');
+}
+```
+This is an assignment statement `left = arr[0].` `left` is assigned to array index-zero value. 
+The selection statements are `if, else if & else`. As for the loops, we are using while loop 
+in the example above `while()`.

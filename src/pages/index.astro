@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<p>Personal blog by Mohamoud.</p>
+			<em>simple wording with code.</em>
+
+			<p>Welcome Visitors.</p>
+			<p>A platform serves as a framework to showcase my computational skills.</p>
+			<p>As a developer, it is required of me to solve problems on a daily basis and to craft efficient methods. My mental philosophy are what I called the four pillars path to any knowledge.</p> 
+			<p>Listening with comprehension, reading with comprehension,  writing and speaking properly. We could translate these four pillars as a computational approach listening with comprehension and reading with comprehension being the input and the latter two being the output.</p>
+			<p>Without taking away any value from technical techniques to solve problems at hand. Furthermore, the importance of understanding syntaxes, semantics, frameworks, data structures, algorithms and software engineering principles. Nevertheless, the importance of mental abstraction can’t never be underestimated.</p>
+		</main>
+		<Footer />
+	</body>
+</html>

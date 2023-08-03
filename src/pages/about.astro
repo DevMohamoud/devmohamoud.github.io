@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="About Me"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date('August 08 2021')}
+	updatedDate={new Date('August 08 2022')}
+	heroImage="/placeholder-about.jpg"
+>
+<header>
+	<h1 class="title">Mohamoud Yusuf</h1>
+	</header>
+	<nav id="TOC">
+	<ul>
+	<li><a href="#about">About</a><ul>
+	<!-- <li><a href="#my-main-work">My main work</a></li> -->
+	<li><a href="#contact">Contact</a></li>
+	<li><a href="#institutions">Institutions</a></li>
+	</ul></li>
+	<li><a href="#classes">Languages</a><ul>
+	<li><a href="#in-person">Human</a></li>
+	<li><a href="#online">Machine</a></li>
+	</ul>
+</header>
+<body>
+	<h1 id="about">About</h1>
+	<p>Hello there, I'm Mohamoud currently resided in Seattle, WA.
+	   I love programming. My main focus right now is the front-end.
+	   However, since I spend nearly all my time programming I am not stranger to the back-end (low level programming).</p>
+	<h2 id="contact">Contact</h2>
+	<ul>
+	<li>Email: <a href="mailto:luke">my@gmail.com</a></li>
+	<li>Website: <a href="https://codetoconquer.com" class="uri">https://codetoconquer.com</a></li>
+	<li>Github: <a href="https://github.com/ruwayda114" class="uri">https://github.com/ruwayda114</a></li>
+	<li>LinkedIn: <a href="https://www.linkedin.com/in/mohamoud-yusuf-7525321a7/" class="uri">https://www.linkedin.com/in/mohamoud-yusuf-7525321a7/</a></li>
+	</ul>
+	<h2 id="institutions">Institutions</h2>
+	<ul>
+	<li>BAS, Application Development. Renton Technical College. 2022-present</li>
+	<h1 id="languages">Languages</h1>
+	<h2 id="human">Bilingual</h2>
+	<p>Somalia, Arabic.
+    <h2 id="Machine">Machine</h2>
+	<ul>
+		<li>JavaScript.</li> 
+		<li>NodeJS</li>
+		<li>Scheme Lisp.</li> 
+		<li>Reactjs.</li>
+		<li>Astrojs.</li>
+		<li>Nextjs.</li> 
+		<li>JSX.</li> 
+		<li>LaTeX.</li> 
+		<li>Markdown.</li>  
+		<li>HTML & CSS.</li>
+	</ul> 
+</body>
+</Layout>
